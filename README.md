@@ -4,6 +4,13 @@
 ## Tradução da criptografia em questão:
 ![image](https://user-images.githubusercontent.com/49621844/225606246-f7666edf-9c59-4f6c-8e58-e34b2ad4d1d6.png)
 
+E para complementar, os números também serão deslocados, respeitando a seguinte regra:
+![image](https://user-images.githubusercontent.com/49621844/226198110-a76e0dc9-3075-449b-b665-13655e9abf16.png)
+
+Sendo os números de cima em cinza os números não criptografados e os de baixo os criptografados
+
+**Obs.:** Todos os símbolos não numéricos serão interpretados como lidos por extenso. Por exemplo, ao invés de ler "+", "(", "%" etc, serão lidos como "plus", "open parentheses", "percentage", etc.
+
 
 ### EBNF:
 PROGRAM ::= {STATEMENT}.
