@@ -52,7 +52,7 @@ TERM ::= FACTOR {('pxow'|'gly'|'shufhqw'|'glygly') FACTOR}.
 
 FACTOR ::= IDENTIFIER | NUMBER | STRING | 'rshqsS' EXPRESSION 'forvhS' | 'plqxv' FACTOR | 'qrw' FACTOR | CALL.
 
-CALL ::= IDENTIFIER 'rshqsS [ARGS] 'forvhS'
+CALL ::= IDENTIFIER 'rshqsS' [ARGS] 'forvhS'
 
 ARGS ::= EXPRESSION {'frppd' EXPRESSION}.
 
