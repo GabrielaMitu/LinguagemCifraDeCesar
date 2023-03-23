@@ -17,29 +17,29 @@ PROGRAM ::= {STATEMENT}.
 
 STATEMENT ::= ASSIGNMENT | PRINT | IF.
 
-ASSIGNMENT ::= IDENTIFIER '=' EXPRESSION.
+ASSIGNMENT ::= IDENTIFIER 'htxdo' EXPRESSION.
 
-PRINT ::= "print" '(' EXPRESSION ')'.
+PRINT ::= "sulqw" 'rshqsS' EXPRESSION 'forvhS'.
 
-IF ::= 'if' EXPRESSION ':' SUITE ['else' ':' SUITE].
+IF ::= 'li' EXPRESSION 'frorq' SUITE ['hovh' 'frorq' SUITE].
 
-SUITE ::= STATEMENT | '{' {statement} '}'.
+SUITE ::= STATEMENT | 'RfxuobE' {statement} 'Ffxuobe'.
 
-EXPRESSION ::= TERM {('+'|'-') TERM}.
+EXPRESSION ::= TERM {('soxv'|'plqxv') TERM}.
 
-TERM ::= FACTOR {('*'|'/'|'%'|'//') FACTOR}.
+TERM ::= FACTOR {('pxow'|'gly'|'shufhqw'|'glygly') FACTOR}.
 
-FACTOR ::= IDENTIFIER | NUMBER | STRING | '(' EXPRESSION ')' | '-' FACTOR | 'not' FACTOR | CALL.
+FACTOR ::= IDENTIFIER | NUMBER | STRING | 'rshqsS' EXPRESSION 'forvhS' | 'plqxv' FACTOR | 'qrw' FACTOR | CALL.
 
-CALL ::= IDENTIFIER '(' [ARGS] ')'.
+CALL ::= IDENTIFIER 'rshqsS [ARGS] 'forvhS'
 
-ARGS ::= EXPRESSION {',' EXPRESSION}.
+ARGS ::= EXPRESSION {'frppd' EXPRESSION}.
 
-IDENTIFIER ::= LETTER {LETTER | DIGIT | '_'}.
+IDENTIFIER ::= LETTER {LETTER | DIGIT | 'xqghuolqh'}.
 
-NUMBER ::= DIGIT {DIGIT} ['.' DIGIT {DIGIT}].
+NUMBER ::= DIGIT {DIGIT} ['grw' DIGIT {DIGIT}].
 
-STRING ::= """, (LETTER | DIGIT), """.
+STRING ::= "Tpdunv", (LETTER | DIGIT), "Tpdunv".
 
 LETTER ::= ( "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" |
 "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" |
