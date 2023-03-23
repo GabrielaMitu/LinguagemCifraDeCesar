@@ -36,38 +36,38 @@ Portanto, a tradução dos operadores em cifra de cesar terá o seguinte formato
 
 
 ### EBNF:
-PROGRAM ::= {STATEMENT}.
+    PROGRAM ::= {STATEMENT}.
 
-STATEMENT ::= ASSIGNMENT | PRINT | IF.
+	STATEMENT ::= ASSIGNMENT | PRINT | IF.
 
-ASSIGNMENT ::= IDENTIFIER 'htxdo' EXPRESSION.
+	ASSIGNMENT ::= IDENTIFIER 'htxdo' EXPRESSION.
 
-PRINT ::= "sulqw" 'rshqsS' EXPRESSION 'forvhS'.
+	PRINT ::= "sulqw" 'rshqsS' EXPRESSION 'forvhS'.
 
-IF ::= 'li' EXPRESSION 'frorq' SUITE ['hovh' 'frorq' SUITE].
+	IF ::= 'li' EXPRESSION 'frorq' SUITE ['hovh' 'frorq' SUITE].
 
-SUITE ::= STATEMENT | 'RfxuobE' {statement} 'Ffxuobe'.
+	SUITE ::= STATEMENT | 'RfxuobE' {statement} 'Ffxuobe'.
 
-EXPRESSION ::= TERM {('soxv'|'plqxv') TERM}.
+	EXPRESSION ::= TERM {('soxv'|'plqxv') TERM}.
 
-TERM ::= FACTOR {('pxow'|'gly'|'shufhqw'|'glygly') FACTOR}.
+	TERM ::= FACTOR {('pxow'|'gly'|'shufhqw'|'glygly') FACTOR}.
 
-FACTOR ::= IDENTIFIER | NUMBER | STRING | 'rshqsS' EXPRESSION 'forvhS' | 'plqxv' FACTOR | 'qrw' FACTOR | CALL.
+	FACTOR ::= IDENTIFIER | NUMBER | STRING | 'rshqsS' EXPRESSION 'forvhS' | 'plqxv' FACTOR | 'qrw' FACTOR | CALL.
 
-CALL ::= IDENTIFIER 'rshqsS' [ARGS] 'forvhS'
+	CALL ::= IDENTIFIER 'rshqsS' [ARGS] 'forvhS'
 
-ARGS ::= EXPRESSION {'frppd' EXPRESSION}.
+	ARGS ::= EXPRESSION {'frppd' EXPRESSION}.
 
-IDENTIFIER ::= LETTER {LETTER | DIGIT | 'xqghuolqh'}.
+	IDENTIFIER ::= LETTER {LETTER | DIGIT | 'xqghuolqh'}.
 
-NUMBER ::= DIGIT {DIGIT} ['grw' DIGIT {DIGIT}].
+	NUMBER ::= DIGIT {DIGIT} ['grw' DIGIT {DIGIT}].
 
-STRING ::= "Tpdunv", (LETTER | DIGIT), "Tpdunv".
+	STRING ::= "Tpdunv", (LETTER | DIGIT), "Tpdunv".
 
-LETTER ::= ( "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" |
-"M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" |
-"Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" |
-"k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" |
-"w" | "x" | "y" | "z" ) ;
+	LETTER ::= ( "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" |
+	"M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" |
+	"Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" |
+	"k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" |
+	"w" | "x" | "y" | "z" ) ;
 
-DIGIT ::= ( "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "0" ) ;
+	DIGIT ::= ( "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "0" ) ;
