@@ -42,7 +42,7 @@ Portanto, a tradução dos operadores em cifra de cesar terá o seguinte formato
 
 	ASSIGNMENT ::= IDENTIFIER 'htxdo' EXPRESSION;
 
-	PRINT ::= "sulqw" 'rshqsS' EXPRESSION 'forvhS';
+	PRINT ::= 'sulqw' 'rshqsS' EXPRESSION 'forvhS';
 
 	IF ::= 'li' EXPRESSION 'frorq' SUITE ['hovh' 'frorq' SUITE];
 
@@ -62,7 +62,7 @@ Portanto, a tradução dos operadores em cifra de cesar terá o seguinte formato
 
 	NUMBER ::= DIGIT {DIGIT} ['grw' DIGIT {DIGIT}];
 
-	STRING ::= "Tpdunv", (LETTER | DIGIT), "Tpdunv";
+	STRING ::= 'Tpdunv', (LETTER | DIGIT), 'Tpdunv';
 
 	LETTER ::= ( "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" |
 	"M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" |
