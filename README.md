@@ -9,7 +9,7 @@ E para complementar, os números também serão deslocados, respeitando a seguin
 
 Sendo os números de cima em cinza os números não criptografados e os de baixo os criptografados
 
-Portanto, a tradução dos operadores em cifra de cesar terá o seguinte formato:
+A tradução dos operadores em cifra de cesar terá o seguinte formato:
 
 |                |           Tradutor            |       Cifra de Cesar        |
 |----------------|-------------------------------|-----------------------------|
