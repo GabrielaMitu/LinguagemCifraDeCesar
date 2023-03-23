@@ -9,6 +9,27 @@ E para complementar, os números também serão deslocados, respeitando a seguin
 
 Sendo os números de cima em cinza os números não criptografados e os de baixo os criptografados
 
+|                |           Tradutor            |       Cifra de Cesar        |
+|----------------|-------------------------------|-----------------------------|
+|       +        |            plus               |           soxv              |
+|       -        |            minus              |           plqxv             |
+|       *        |            mult               |           pxow              |
+|       /        |            div                |           gly               |
+|       //       |            divdiv             |           glygly            |
+|       ,        |            comma              |           frppd             |
+|       .        |            dot                |           grw               |
+|       :        |            colon              |           frorq             |
+|       %        |            percent            |           shufhqw           |
+|       "        |            Qmarks             |           Tpdunv            |
+|       _        |            underline          |           xqghuolqh         |
+|       (        |            openP              |           rshqS             |
+|       )        |            closeP             |           forvhS            |
+|       {        |            OcurlyB            |           RfxuobE           |
+|       }        |            CcurlyB            |           FfxuobE           |
+|       if       |            if                 |           li                |
+|       else     |            else               |           hovh              |
+|       not      |            not                |           qrw               |
+
 **Obs.:** Todos os símbolos não numéricos serão interpretados como lidos por extenso. Por exemplo, ao invés de ler "+", "(", "%" etc, serão lidos como "plus", "open parentheses", "percentage", etc.
 
 
