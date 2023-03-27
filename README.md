@@ -1,5 +1,6 @@
 # LogComp-APS
 ## Linguagem de programação utilizando a criptografia da Cifra de Cesar
+A principal razão da criação desta linguagem é a consideração dos aspectos da criptografia e como essa prática pode ser aplicada na programação.
 
 ## Tradução da criptografia em questão:
 ![image](https://user-images.githubusercontent.com/49621844/225606246-f7666edf-9c59-4f6c-8e58-e34b2ad4d1d6.png)
