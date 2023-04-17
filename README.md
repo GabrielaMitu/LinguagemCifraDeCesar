@@ -32,6 +32,9 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 |       if       |            if                 |           li                |
 |       else     |            else               |           hovh              |
 |       not      |            not                |           qrw               |
+|       =        |            equal              |           htxdo             |
+|       ==       |            compare            |           frpsduh           |
+
 
 **Obs.:** Todos os símbolos não numéricos serão interpretados como lidos por extenso. Por exemplo, ao invés de ler "+", "(", "%" etc, serão lidos como "plus", "open parentheses", "percentage", etc.
 
