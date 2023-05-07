@@ -25,14 +25,25 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 |       %        |            percent            |           shufhqw           |
 |       "        |            Qmarks             |           Tpdunv            |
 |       _        |            underline          |           xqghuolqh         |
-|       (        |            openP              |           rshqS             |
-|       )        |            closeP             |           forvhS            |
+|       (        |            openpar            |           rshqsdu           |
+|       )        |            closepar           |           forvhsdu          |
 |       {        |            OcurlyB            |           RfxuobE           |
 |       }        |            CcurlyB            |           FfxuobE           |
 |       if       |            if                 |           li                |
 |       else     |            else               |           hovh              |
-|       not      |            not                |           qrw               |
+|       while    |            while              |           zkloh             |
+|       read     |            read               |           uhdg              |
+|       print    |            print              |           sulqw             |
+|       !        |            not                |           qrw               |
+|       =        |            equal              |           htxdo             |
+|       ==       |            compare            |           frpsduh           |
+|       >        |            bigger             |           eljjhu            |
+|       <        |            smaller            |           vpdoohu           |
+|       &&       |            and                |           dqg               |
+|       \|\|     |            or                 |           ru                |
 
+
+ 
 **Obs.:** Todos os símbolos não numéricos serão interpretados como lidos por extenso. Por exemplo, ao invés de ler "+", "(", "%" etc, serão lidos como "plus", "open parentheses", "percentage", etc.
 
 
