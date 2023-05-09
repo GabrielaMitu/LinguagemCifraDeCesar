@@ -4,26 +4,33 @@
   void yyerror(const char *s) { printf("ERROR: %s", s); }
 %}
 
-%token IDENTIFIER INT
-%token WHILE IF ELSE PRINT READ
+%token IDENTIFIER
+%token WHILE IF ELSE PRINT READ END
 %token EQUAL COMPARE NOT PLUS MINUS MULT DIV AND OR BIGGER SMALLER
 %token OPENPAR CLOSEPAR
+%token TYPE STRING INT
 
 %start program
 
 %%
 
-program : block 
+program : statementList 
         ;
 
-block : statement
-      | block statement
+block : statementList END
+      | END
       ;
 
-statement : assigment
-          | print
-          | while
-          | if
+statementList  : statement
+               | statementList statement
+               ;
+
+statement : TYPE IDENTIFIER EQUAL relexpression;
+          | IDENTIFIER EQUAL relexpression;
+          | PRINT OPENPAR relexpression CLOSEPAR          
+          | WHILE relexpression statement;
+          | IF relexpression block
+          | IF relexpression block ELSE block
           ;
 
 relexpression: expression COMPARE expression
@@ -44,20 +51,15 @@ term: factor
     | factor AND factor
     ;
 
-factor: INT         { printf("INT: %d\n", yylval); $$ = yylval; }
-    | IDENTIFIER    
-    | PLUS factor   
-    | MINUS factor  
-    | NOT factor
-    | OPENPAR relexpression CLOSEPAR
-    | READ OPENPAR CLOSEPAR
-    ;
-
-while: WHILE relexpression statement;
-if: IF relexpression statement else | IF relexpression statement;
-assigment: IDENTIFIER EQUAL relexpression;
-print: PRINT OPENPAR relexpression CLOSEPAR;
-else: ELSE statement;
+factor  : INT
+        | STRING
+        | IDENTIFIER    
+        | PLUS factor   
+        | MINUS factor  
+        | NOT factor
+        | OPENPAR relexpression CLOSEPAR
+        | READ OPENPAR CLOSEPAR
+        ;
 
 %%
 

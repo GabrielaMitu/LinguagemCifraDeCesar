@@ -18,17 +18,9 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 |       -        |            minus              |           plqxv             |
 |       *        |            mult               |           pxow              |
 |       /        |            div                |           gly               |
-|       //       |            divdiv             |           glygly            |
-|       ,        |            comma              |           frppd             |
 |       .        |            dot                |           grw               |
-|       :        |            colon              |           frorq             |
-|       %        |            percent            |           shufhqw           |
-|       "        |            Qmarks             |           Tpdunv            |
-|       _        |            underline          |           xqghuolqh         |
 |       (        |            openpar            |           rshqsdu           |
 |       )        |            closepar           |           forvhsdu          |
-|       {        |            OcurlyB            |           RfxuobE           |
-|       }        |            CcurlyB            |           FfxuobE           |
 |       if       |            if                 |           li                |
 |       else     |            else               |           hovh              |
 |       while    |            while              |           zkloh             |
@@ -41,40 +33,40 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 |       <        |            smaller            |           vpdoohu           |
 |       &&       |            and                |           dqg               |
 |       \|\|     |            or                 |           ru                |
+|       Int      |            Int                |           lqw               |
+|       String   |            String             |           vwulqj            |
 
 
- 
+
 **Obs.:** Todos os símbolos não numéricos serão interpretados como lidos por extenso. Por exemplo, ao invés de ler "+", "(", "%" etc, serão lidos como "plus", "open parentheses", "percentage", etc.
 
 
 ### EBNF:
-    PROGRAM ::= {STATEMENT};
+    PROGRAM ::= statementList;
 
-	STATEMENT ::= ASSIGNMENT | PRINT | IF;
+	BLOCK ::= statementList, END | END
 
-	ASSIGNMENT ::= IDENTIFIER 'htxdo' EXPRESSION;
+	STATEMENTLIST ::= STATEMENT | STATEMENTLIST, STATEMENT
 
-	PRINT ::= 'sulqw' 'rshqsS' EXPRESSION 'forvhS';
+	STATEMENT ::= TYPE, ASSIGNMENT | ASSIGNMENT | PRINT | WHILE | IF;
 
-	IF ::= 'li' EXPRESSION 'frorq' SUITE ['hovh' 'frorq' SUITE];
+	ASSIGNMENT ::= IDENTIFIER, 'htxdo', relexpression;
 
-	SUITE ::= STATEMENT | 'RfxuobE' {statement} 'Ffxuobe';
+	PRINT ::= 'sulqw', 'rshqsdu', RELEXPRESSION, 'forvhsdu';
 
-	EXPRESSION ::= TERM {('soxv'|'plqxv') TERM};
+	WHILE = 'zkloh', RELEXPRESSION, STATEMENT;
 
-	TERM ::= FACTOR {('pxow'|'gly'|'shufhqw'|'glygly') FACTOR};
+	IF ::= 'li', RELEXPRESSION BLOCK | 'li', RELEXPRESSION, BLOCK, 'hovh', BLOCK
 
-	FACTOR ::= IDENTIFIER | NUMBER | STRING | 'rshqsS' EXPRESSION 'forvhS' | 'plqxv' FACTOR | 'qrw' FACTOR | CALL;
+	RELEXPRESSION ::= EXPRESSION, {('frpsduh'| 'eljjhu' | 'vpdoohu'), EXPRESSION};
 
-	CALL ::= IDENTIFIER 'rshqsS' [ARGS] 'forvhS';
+	EXPRESSION ::= TERM, {('soxv'|'plqxv'|'ru'), TERM};
 
-	ARGS ::= EXPRESSION {'frppd' EXPRESSION};
+	TERM ::= FACTOR, {('pxow'|'gly'|'dqg'), FACTOR};
 
-	IDENTIFIER ::= LETTER {LETTER | DIGIT | 'xqghuolqh'};
+	FACTOR ::=  INT | STRING | IDENTIFIER | "soxv", FACTOR | "plqxv", FACTOR | "qrw", FACTOR | "rshqsdu", RELEXPRESSION, "forvhsdu" | "uhdg", "rshqsdu", "forvhsdu";
 
-	NUMBER ::= DIGIT {DIGIT} ['grw' DIGIT {DIGIT}];
-
-	STRING ::= 'Tpdunv', (LETTER | DIGIT), 'Tpdunv';
+	IDENTIFIER = LETTER, { LETTER | DIGIT | "_" } ;
 
 	LETTER ::= ( "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" |
 	"M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" |
