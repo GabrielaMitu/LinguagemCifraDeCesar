@@ -64,11 +64,16 @@ extern int yydebug;
      OR = 273,
      BIGGER = 274,
      SMALLER = 275,
-     OPENPAR = 276,
-     CLOSEPAR = 277,
-     TYPE = 278,
-     STRING = 279,
-     INT = 280
+     CONCAT = 276,
+     OPENPAR = 277,
+     CLOSEPAR = 278,
+     TYPE = 279,
+     STRING = 280,
+     INT = 281,
+     TYPE_REF = 282,
+     FUNCTION = 283,
+     RETURN = 284,
+     COMMA = 285
    };
 #endif
 

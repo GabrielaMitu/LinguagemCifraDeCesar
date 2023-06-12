@@ -30,6 +30,11 @@ int position = 0;
 "rshqsdu"       { printf("Abertura de parenteses: %s\n", yytext); position++; return OPENPAR; }
 "forvhsdu"      { printf("Fechamento de parenteses: %s\n", yytext); position++; return CLOSEPAR; }
 "hqg"           { printf("END: %s\n", yytext); position++; return END; }
+"ixqfwlrq"      { printf("Instrução de Função: %s\n", yytext); position++; return FUNCTION; }
+"uhwxuq"        { printf("Instrução de Return: %s\n", yytext); position++; return RETURN; }
+"frppd"         { printf("Instrução de vírgula: %s\n", yytext); position++; return COMMA; }  
+"wbsh"          { printf("Instrução de Type: %s\n", yytext); position++; return TYPE_REF; }
+"grw"           { printf("Instrução de Type: %s\n", yytext); position++; return CONCAT; }
 
 
 "lqw"           { printf("Int(type)\n"); position++; return TYPE;}

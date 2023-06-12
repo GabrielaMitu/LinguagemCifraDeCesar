@@ -19,10 +19,12 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 |       *        |            mult               |           pxow              |
 |       /        |            div                |           gly               |
 |       .        |            dot                |           grw               |
+|       ,        |            comma              |           frppd             |
 |       (        |            openpar            |           rshqsdu           |
 |       )        |            closepar           |           forvhsdu          |
 |       if       |            if                 |           li                |
 |       else     |            else               |           hovh              |
+|       end      |            end                |           hqg               |
 |       while    |            while              |           zkloh             |
 |       read     |            read               |           uhdg              |
 |       print    |            print              |           sulqw             |
@@ -35,7 +37,9 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 |       \|\|     |            or                 |           ru                |
 |       Int      |            Int                |           lqw               |
 |       String   |            String             |           vwulqj            |
-
+|       return   |            return             |           uhwxuq            |
+|       function |            function           |           ixqfwlrq          |
+|       ::       |            type               |           wbsh              |
 
 
 **Obs.:** Todos os símbolos não numéricos serão interpretados como lidos por extenso. Por exemplo, ao invés de ler "+", "(", "%" etc, serão lidos como "plus", "open parentheses", "percentage", etc.

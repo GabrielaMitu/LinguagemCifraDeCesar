@@ -1,7 +1,8 @@
 sulqw rshqsdu 5 forvhsdu
 
-lqw x htxdo 2
-lqw y htxdo 3
+x wbsh lqw htxdo 2
+y wbsh lqw 
+y htxdo 3
 
 li y eljjhu x
     sulqw rshqsdu "khoor zruog" forvhsdu
@@ -13,3 +14,9 @@ li x eljjhu y
 hovh
     sulqw rshqsdu x soxv y forvhsdu
     hqg
+
+ixqfwlrq vrpd rshqsdu a wbsh lqw frppd b wbsh lqw forvhsdu wbsh lqw
+	uhwxuq a soxv b
+hqg
+
+z wbsh lqw htxdo vrpd rshqsdu 1 frppd 2 forvhsdu
