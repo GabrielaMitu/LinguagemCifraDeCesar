@@ -46,15 +46,11 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 
 
 ### EBNF:
-    PROGRAM ::= statementList;
+	BLOCK ::= statement | END
 
-	BLOCK ::= statementList, END | END
+	STATEMENT ::=  ( λ | ASSIGNMENT, ( "htxdo", RELEXPRESSION | "rshqsdu", "RELEXPRESSION", (λ | "frppd"), "forvhsdu" ) | RETURN, RELEXPRESSION | PRINT | WHILE | IF | FUNCTION), "\n" ;
 
-	STATEMENTLIST ::= STATEMENT | STATEMENTLIST, STATEMENT
-
-	STATEMENT ::= TYPE, ASSIGNMENT | ASSIGNMENT | PRINT | WHILE | IF;
-
-	ASSIGNMENT ::= IDENTIFIER, 'htxdo', relexpression;
+	ASSIGNMENT ::= IDENTIFIER, 'htxdo', relexpression | IDENTIFIER, "wbsh", TYPE;
 
 	PRINT ::= 'sulqw', 'rshqsdu', RELEXPRESSION, 'forvhsdu';
 
@@ -62,7 +58,7 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 
 	IF ::= 'li', RELEXPRESSION BLOCK | 'li', RELEXPRESSION, BLOCK, 'hovh', BLOCK
 
-	RELEXPRESSION ::= EXPRESSION, {('frpsduh'| 'eljjhu' | 'vpdoohu'), EXPRESSION};
+	RELEXPRESSION ::= EXPRESSION, {('frpsduh'| 'eljjhu' | 'vpdoohu' | 'grw'), EXPRESSION};
 
 	EXPRESSION ::= TERM, {('soxv'|'plqxv'|'ru'), TERM};
 
@@ -71,6 +67,12 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 	FACTOR ::=  INT | STRING | IDENTIFIER | "soxv", FACTOR | "plqxv", FACTOR | "qrw", FACTOR | "rshqsdu", RELEXPRESSION, "forvhsdu" | "uhdg", "rshqsdu", "forvhsdu";
 
 	IDENTIFIER = LETTER, { LETTER | DIGIT | "_" } ;
+	
+	FUNCTION = IDENTIFIER , "rshqsdu" , ( λ | IDENTIFIER, "wbsh", TYPE ( λ | "frppd" )), "forvhsdu", "wbsh", TYPE, "\n", STATEMENT
+	
+	NUMBER = DIGIT, { DIGIT } ;
+
+	TYPE = STRING | INT ;
 
 	LETTER ::= ( "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" |
 	"M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" |
