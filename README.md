@@ -79,3 +79,58 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 	"w" | "x" | "y" | "z" ) ;
 
 	DIGIT ::= ( "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "0" ) ;
+	
+## Exemplos de testes
+
+#### If/Else
+
+	li y eljjhu x
+	    sulqw rshqsdu "khoor zruog" forvhsdu
+	    hqg
+
+	li x eljjhu y
+	    sulqw rshqsdu "qrw jrrg" forvhsdu
+	    hqg
+	hovh
+	    sulqw rshqsdu x soxv y forvhsdu
+	    hqg
+
+#### While
+
+	zkloh rshqsdu rshqsdu x_1 eljjhu 6 forvhsdu ru rshqsdu x_1 frpsduh 6 forvhsdu forvhsdu 
+	    x_1 htxdo x_1 plqxv 6
+	    sulqw rshqsdu x_1 forvhsdu
+	hqg
+
+#### Função
+
+	ixqfwlrq vrpd rshqsdu a wbsh lqw frppd b wbsh lqw forvhsdu wbsh lqw
+		uhwxuq a soxv b
+	hqg
+
+	z wbsh lqw htxdo vrpd rshqsdu 1 frppd 2 forvhsdu
+	
+#### Teste geral
+
+	sulqw rshqsdu 5 forvhsdu
+
+	x wbsh lqw htxdo 2
+	y wbsh lqw 
+	y htxdo 3
+
+	li y eljjhu x
+	    sulqw rshqsdu "khoor zruog" forvhsdu
+	    hqg
+
+	li x eljjhu y
+	    sulqw rshqsdu "qrw jrrg" forvhsdu
+	    hqg
+	hovh
+	    sulqw rshqsdu x soxv y forvhsdu
+	    hqg
+
+	ixqfwlrq vrpd rshqsdu a wbsh lqw frppd b wbsh lqw forvhsdu wbsh lqw
+		uhwxuq a soxv b
+	hqg
+
+	z wbsh lqw htxdo vrpd rshqsdu 1 frppd 2 forvhsdu
