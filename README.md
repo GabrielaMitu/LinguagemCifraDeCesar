@@ -81,7 +81,18 @@ A tradução dos operadores em cifra de cesar terá o seguinte formato:
 	"w" | "x" | "y" | "z" ) ;
 
 	DIGIT ::= ( "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "0" ) ;
-	
+
+## Como rodar o compilador
+
+	python main.py input.ccl
+
+## Como testar em Flex e Bison
+
+	flex tokens.l
+	bison -d -t parser.y
+	gcc lex.yy.c parser.tab.c
+	a < teste.txt
+
 ## Exemplos de testes
 
 #### If/Else
